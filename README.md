@@ -1,0 +1,1 @@
+# go-stdin-sleep-stdout
