@@ -6,12 +6,17 @@ where "M.m.P-I" is Major.minor.Patch-Iteration.
 
 ## Usage
 
-A simple "hello world" program.
-The purpose of the repository is to show how to:
+`go-stdin-sleep-stdout` is a tool 
+to receive input from `stdin`, sleep,
+then push the input to `stdout`.
 
-1. Build go executable locally
-1. Build go executable via Docker
-1. Build RPM / DEB installation via Docker.
+The main use of `go-stdin-sleep-stdout` is to delay the piping of stdout / stdin.  Example:
+
+ ```console
+program-1 | go-stdin-sleep-stdout --sleep 5 | program-2
+```
+
+This example introduces a 5-second delay from the output of program-1 to the input into program-2.
 
 ### Invocation
 
